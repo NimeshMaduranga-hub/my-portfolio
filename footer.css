@@ -1,3 +1,26 @@
+/*
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+footer {
+    background-color: #0D2221;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    width: 100%;
+}
+
+
 header {
     background: rgba(0, 0, 0, 0.8);
     padding: 15px 0;
@@ -21,6 +44,7 @@ nav ul li a {
     padding: 50px;
     max-width: 800px;
     margin: auto;
+    flex: 1;
 }
 .about-section h2, h3 {
     color: #a0ffa0;
@@ -34,4 +58,5 @@ footer {
     text-align: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.8);
-}
+    margin-top: auto;
+}*/

@@ -8,7 +8,9 @@
 }
 
 body {
+    background: linear-gradient(270deg, green, yellowgreen, lightyellow, yellowgreen, green);
     background: linear-gradient(to right, #0D2221 0%, #0D2221 50%, #0D2221 100%);
+    animation: animateBg 10s infinite alternate ease-in-out;
     color: white;
 }
 
@@ -71,6 +73,12 @@ nav a {
     width: 100px;
     height: auto;
 }
+#education\ title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 .container {
     display: grid;
@@ -79,6 +87,9 @@ nav a {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+}
+.logoimage{
+    display: grid;
 }
 
 .card {
@@ -274,9 +285,142 @@ h1 {
     font-size: 1rem;
 }
 
-.footer {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    font-weight: 300;
+
+
+
+.animated-box {
+    width: 200px;
+    height: 500px;
+    background: linear-gradient(to bottom, green, yellowgreen, lightyellow, yellowgreen);
+    filter: blur(10px);
+    animation: changeColor 7s infinite alternate;
 }
 
+@keyframes changeColor {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+footer {
+    background-color: #17362A;
+    text-align: center;
+    padding: -50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+footer img{
+    width: 100px;
+    height: auto;
+    margin-bottom: auto;
+    align-items: flex-start;
+
+}
+
+.meddata-ganna{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+iframe {
+    margin-bottom: 20px;
+}
+.banner-meddata{
+    display: flex;
+    justify-content: center;
+
+}
+.About-meddata{
+    display: flex;
+    justify-content: center;
+}
+.contact-meddata{
+    display: flex;
+    justify-content: center;
+}
+.paragraph-medata{
+    display: flex;
+    justify-content: center;
+}
+.About-heddings-meddata{
+    display: flex;
+    justify-content: center;
+}
+.Service-meddata{
+    display: flex;
+    justify-content: center;
+}
+.Skill-meddata{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.contact-form {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    background: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ccc;
+}
+
+.hello-text {
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
